@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -alR | awk '{ if ($9) print $9  }'
+ls -falR | awk '{ if ($9 && $9 != "." && $9 != "..") { print $9 }  }'
