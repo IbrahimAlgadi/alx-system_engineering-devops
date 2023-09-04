@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -alR | awk '{ if ($9) print $9  }'
