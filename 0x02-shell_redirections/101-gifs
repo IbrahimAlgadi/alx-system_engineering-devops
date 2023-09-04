@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -name "*.html" -printf "%f\n" | sort -f | sed -e "s/[".html"]*$//g"
+find -type f -name "*.gif" -printf "%f\n" | rev | cut -d'.' -f 2- | rev | LC_ALL=C sort -f
